@@ -1,0 +1,22 @@
+Create a notebook cell for each of the following questions:
+
+[5pts] Create a pandas data frame, df1, using the data in the ‘example_portfolio.csv’ file. Make sure that 'PolicyNo' is the index of this dataframe.
+[5pts] Display the first 7 rows in the data frame.
+[5pts] Display the number of entries and the data types of all the fields.
+[5pts] Create a new dataframe, df2, that contains only the following fields 'Vehicle_Anti_Theft_Device', 'Driver_Minimum_Age', 'Vehicle_Age_In_Years',  'Annual_Premium', 'Loss_Amount'. Note that 'PolicyNo' is the index of this dataframe as well. To answer the following questions use df2.
+[5pts] Show the mean, std, min, and max for the numerical fields.
+[5pts] Show the unique values of 'Vehicle_Anti_Theft_Device'.
+[5pts] Calculate and print out the Portfolio Premium, Portfolio Loss, and Loss Ratio. Portfolio Premium = sum of all the Annual Premiums of all the policies. Portfolio Loss = sum of all the Loss Amounts of all the policies. Loss Ratio = Portfolio Loss / Portfolio Premium.
+[5pts] Plot the histogram of 'Annual_Premium' field.
+[5pts] Create a new data frame, df3, that groups the rows by Vehicle_Anti_Theft_Device and aggregates them by taking the mean for all the fields. Note that the index of the new data frame should be Vehicle_Anti_Theft_Device. To answer the following questions use df3.
+[5pts] Display the index of the new data frame.
+[5pts] Create a new field 'Loss_Ratio' that gives the loss ratio per type of vehicle anti theft device. Loss Ratio = Loss_Amount / Annual_Premium.
+[5pts] Sort the data frame by Loss Ratio in ascending order.
+[5pts] Create a bar plot for 'Vehicle_Anti_Theft_Device' vs 'Loss_Ratio'.
+[5pts] In the notebook introduce a comment and answer the following question: What conclusion can you draw from the bar plot above?
+[5pts] Save the data in the df3 data frame into a file with the name 'summary.csv'.
+[5pts] Create and display a numpy matrix using only the ‘Annual_Premium’ and ‘Loss_Amount’ fields.
+[5pts] Display the transpose of the new numpy matrix.
+[5pts] Create and display a copy of the third column of the transposed matrix. Make sure you use np.copy().
+[5pts] For data frame df1 create an html report for data exploration using pandas_profiling. Save it into a file with the name 'example_portfolio_report.html'.
+[5pts] In the notebook introduce a comment to list at least three insights from the report that you are learning about the dataset.
